@@ -7,6 +7,7 @@ library(units)
 library(lwgeom)
 library(stringr)
 library(purrr)
+library(magrittr)
 library(osmdata)
 
 options(tigris_use_cache = TRUE)
@@ -425,7 +426,11 @@ trim_other <- function(study_area, geos, name, out_dir = "results") {
       delete_dsn = TRUE)
 }
 
-# study_area <- get_basemap(area = "data/neighborhood.geojson", z_scale = 6, model_size = NULL)
+study_area <- get_basemap(
+  area = "data/neighborhood.geojson", 
+  z_scale = 6, 
+  model_size = NULL
+  )
 
 
 # trim_other(
