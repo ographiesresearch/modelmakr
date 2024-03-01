@@ -1,4 +1,4 @@
 
-# Model MakR 
+# ModelMakR 
 
 Automate 3D modeling tasks!
